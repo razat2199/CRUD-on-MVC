@@ -1,0 +1,61 @@
+﻿@model WebApplication2.Models.Employee
+
+<form method="post" asp-action="Read">
+    <input asp-for="Id" hidden />
+    <div class="border p-3">
+        <div class="form-group row">
+            <h2 class="text-black-50 pl-3">Details</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-borderless table-striped" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>Employee Code</td>
+                            <td><input asp-for="EmployeeCode" disabled class="form-control" /> </td>
+                        </tr>
+                        <tr>
+                            <td>Employee Name</td>
+                            <td><input asp-for="EmployeeName" disabled class="form-control" /> </td>
+                        </tr>
+                        <tr>
+                            <td>Employee Address</td>
+                            <td><input asp-for="EmployeeAddress" disabled class="form-control" /> </td>
+                        </tr>
+                        <tr>
+                            <td>Employee Age</td>
+                            <td><input asp-for="EmployeeAge" disabled class="form-control" /> </td>
+                        </tr>
+                        <tr>
+                            <td>CreatedAt</td>
+                            <td><input asp-for="CreatedAt" disabled class="form-control" /> </td>
+                        </tr>
+                        <tr>
+                            <td>UpdatedAt</td>
+                            <td><input asp-for="UpdatedAt" disabled class="form-control" /> </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="form-group row">
+                    <div class="col-8 offset-2 row">
+                        <div class="col">
+                            <a asp-action="Index" class="btn btn-danger w-75">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
